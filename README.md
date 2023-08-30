@@ -1,6 +1,6 @@
 # node-mirai
 
-Uploader package for [m1r.ai](https://up.m1r.ai)
+Package for [m1r.ai](https://up.m1r.ai)
 
 ## Installation
 
