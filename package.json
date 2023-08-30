@@ -1,6 +1,6 @@
 {
   "name": "node-mirai",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Package for m1r.ai",
   "author": {
     "name": "Gusb3ll",
@@ -35,7 +35,7 @@
     "formdata-node": "4.4.1"
   },
   "devDependencies": {
-    "@types/node": "^20.5.7",
+    "@types/node": "20.5.7",
     "@typescript-eslint/eslint-plugin": "6.5.0",
     "eslint": "8.48.0",
     "ts-node": "10.9.1",
