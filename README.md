@@ -1,17 +1,17 @@
-# Mirai Upload
+# node-mirai
 
 Uploader package for [m1r.ai](https://up.m1r.ai)
 
 ## Installation
 
 ```bash
-pnpm add mirai-upload
+pnpm add node-mirai
 ```
 
 ## Example
 
 ```typescript
-import { upload, readFile } from 'mirai-upload'
+import { upload, readFile } from 'node-mirai'
 
 const file = readFile(
   './path/to/test.png', // './path/to/test.mp4'
