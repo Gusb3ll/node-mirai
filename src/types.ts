@@ -1,21 +1,21 @@
-type ApiResponse = {
+interface ApiResponse {
     success: boolean
     message: string
 }
 
-export type UploadApiResponse = {
+export interface UploadResponse  extends ApiResponse {
     id?: string
     url?: string
     info?: {
         boxId?: string
         fileId?: string
     }
-} & ApiResponse
+} 
 
-type ApiOptions = {
+interface ApiOptions {
     userToken?: string
 }
 
-export type UploadOptions = {
+export interface UploadOptions extends ApiOptions {
     uploadType?: string
-} & ApiOptions
+}

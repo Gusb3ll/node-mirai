@@ -2,7 +2,8 @@ import { upload } from "../src";
 //
 (async () => {
   const img = await upload('./example/test.png', {
-    uploadType: '0'
+    uploadType: '0',
+    headers: { 'Custom-Header': 'abc' }
   })
   console.log('Image :', img.url)
 

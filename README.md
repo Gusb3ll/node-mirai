@@ -11,16 +11,15 @@ pnpm add node-mirai
 ## Example
 
 ```typescript
-import { upload, readFile } from 'node-mirai'
-
-const file = readFile(
-  './path/to/test.png', // './path/to/test.mp4'
-)
+import { upload } from 'node-mirai'
 
 const { url } = await upload(
-  file, 
+  './path/to/file.png', 
   { 
-    headers: { Referrer: 'test-image', CustomHeader: 'test' } 
+    headers: { 
+      Random: 'test-image', 
+      CustomHeader: 'test' 
+    } 
   }
 )
 
@@ -33,14 +32,8 @@ console.log(url)
 
 #### file
 
-Accept type `File`, so you have to create a file object first
+Accept type `File` `Blob` `string`, can be stream of file or path to the file
 
 #### options
 
-Optional, alias from node `fetch()` options
-
-### readFile
-
-#### path
-
-equired, path to file
+Optional, mostly alias from node `fetch()` options with additional upload options
