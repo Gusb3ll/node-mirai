@@ -32,8 +32,7 @@
     "lint": "eslint src --ext .ts"
   },
   "dependencies": {
-    "axios": "1.5.0",
-    "form-data": "4.0.0"
+    "formdata-node": "4.4.1"
   },
   "devDependencies": {
     "@types/node": "^20.5.7",
